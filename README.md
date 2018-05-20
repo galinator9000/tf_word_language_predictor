@@ -1,7 +1,12 @@
 # tf_word_language_predictor
 Basic character-level word language predictor (English-Turkish) with Many-to-One LSTM written in TensorFlow.
 
-# Data
+<h2>Data sources
+<h4>Turkish: https://code.google.com/archive/p/zemberek/downloads (1140208 Turkish words)
+<h4>English: https://github.com/dwyl/english-words (370099 English words)
+
+# Prepare Data
+
 `
 processRaw.py
 `
@@ -16,7 +21,7 @@ Takes processed vocabulary files and creates Numpy matrices named as "X.npy" and
 
 Features are just index number of the alphabet of the current letter.
 
-During feeding to the model, these are converted to one hot vectors. (tf.one_hot function)
+During feed to the model, these are converted to one hot vectors. (tf.one_hot function)
 
 `
 train.py
@@ -25,7 +30,7 @@ train.py
 Loads X.npy and y.npy and trains the model.
 
 # Some examples below.
-(After 100.000 epochs training)
+After 100.000 epochs training, trained with ~50000 words. (~25000 for each language)
 ```
 >> basic
 English: %99.9
