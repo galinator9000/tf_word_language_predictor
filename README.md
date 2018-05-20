@@ -24,7 +24,8 @@ train.py
 
 Loads X.npy and y.npy and trains the model.
 
-# Some examples below. (After 10.000 epochs training)
+# Some examples below.
+(After 100.000 epochs training)
 ```
 >> basic
 English: %99.9
