@@ -15,7 +15,7 @@ X = np.load("X.npy")
 y = np.load("y.npy")
 
 # General variables.
-epochs = 10000
+epochs = 10
 hiddenLayerSize = 256
 learningRate = 0.01
 splitRatio = 0.99
@@ -93,6 +93,14 @@ prediction = tf.nn.softmax(lastOutput)
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
+# Load previously trained model if exists.
+saver = tf.train.Saver()
+try:
+	saver.load(sess, 'model/weights')
+	print("Weights loaded.")
+except:
+	print("Weights not found.")
+
 # Train!
 dataIndex = 0
 for e in range(0, epochs):
@@ -134,6 +142,9 @@ for e in range(0, epochs):
 		print(seqText, langText)
 		print("-----------------------")
 
+# Save trained model.
+saver.save(sess, 'model/weights')
+
 # Training done! Let's test our model with test dataset.
 for dataIndex in range(0, exampleCountTest):
 	batch_x = Xtest[dataIndex]
@@ -157,29 +168,4 @@ for dataIndex in range(0, exampleCountTest):
 	langText = languages[np.argmax(pred)]
 	
 	print(seqText, langText)
-	print("-----------------------")
-
-# Let's test our model by hand as well.
-while True:
-	inW = wordFilter(input(">> "))
-
-	xx = []
-	for inL in inW:
-		xx.append(alphabet.index(inL))
-	xx = np.array(xx)
-
-	batch_x = xx
-	batch_x = batch_x.reshape((1,) + batch_x.shape)
-
-	feed = {
-		xx_n:batch_x
-	}
-
-	pred = sess.run(prediction, feed_dict=feed)
-	for i, lang in enumerate(languages):
-		print(lang + ": %" + ("%.2f" % (pred[i]*100)))
-
-	langText = languages[np.argmax(pred)]
-
-	print(inW, langText)
 	print("-----------------------")
