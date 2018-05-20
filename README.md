@@ -35,52 +35,183 @@ test.py
 
 Loads trained model and lets the user test the model.
 
-# Some examples below.
-After 100.000 epochs training, trained with ~50000 words. (~25000 for each language)
+# Some test examples below.
+After 10.000 epochs training, trained with ~50000 words. (~25000 for each language)
 ```
->> basic
-English: %99.9
-Turkish: %0.0848
-basic English
+English: %98.04
+Turkish: %1.96
+hypophysectomize English
 -----------------------
->> word
-English: %1e+02
-Turkish: %6.12e-17
-word English
+English: %99.99
+Turkish: %0.01
+playwrightess English
 -----------------------
->> level
-English: %98.8
-Turkish: %1.21
-level English
+English: %99.62
+Turkish: %0.38
+footings English
 -----------------------
->> tahmin
-English: %21.9
-Turkish: %78.1
-tahmin Turkish
+English: %30.09
+Turkish: %69.91
+seminule Turkish
 -----------------------
->> natural
-English: %99.3
-Turkish: %0.701
-natural English
+English: %0.00
+Turkish: %100.00
+ağırlaşmasında Turkish
 -----------------------
->> language
-English: %99.8
-Turkish: %0.229
-language English
+English: %0.00
+Turkish: %100.00
+unutmadığımın Turkish
 -----------------------
->> doğal
-English: %82.7
-Turkish: %17.3
-doğal English
+English: %15.65
+Turkish: %84.35
+cezbeden Turkish
 -----------------------
->> dil
-English: %96.4
-Turkish: %3.64
-dil English
+English: %0.00
+Turkish: %100.00
+düşeceklerle Turkish
 -----------------------
->> işleme
-English: %5.73e-08
-Turkish: %1e+02
-işleme Turkish
+English: %100.00
+Turkish: %0.00
+unpropriety English
+-----------------------
+English: %95.69
+Turkish: %4.31
+lararia English
+-----------------------
+English: %99.17
+Turkish: %0.83
+lithotrite English
+-----------------------
+English: %0.00
+Turkish: %100.00
+savunmanızı Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+statüsündeydiler Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+kontratımla Turkish
+-----------------------
+English: %72.68
+Turkish: %27.32
+comtesse English
+-----------------------
+English: %99.17
+Turkish: %0.83
+greenhorns English
+-----------------------
+English: %0.01
+Turkish: %99.99
+solmazdı Turkish
+-----------------------
+English: %99.84
+Turkish: %0.16
+regaling English
+-----------------------
+English: %0.00
+Turkish: %100.00
+incinmişsin Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+sağlamlandırmak Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+ulaşılmışlık Turkish
+-----------------------
+English: %0.08
+Turkish: %99.92
+serenliyi Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+durumdaymışım Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+kaybedesiniz Turkish
+-----------------------
+English: %86.71
+Turkish: %13.29
+protephemeroidea English
+-----------------------
+English: %99.95
+Turkish: %0.05
+botchy English
+-----------------------
+English: %98.94
+Turkish: %1.06
+undersaturate English
+-----------------------
+English: %99.53
+Turkish: %0.47
+fierabras English
+-----------------------
+English: %99.99
+Turkish: %0.01
+onay English
+-----------------------
+English: %0.00
+Turkish: %100.00
+üçkağıtçıda Turkish
+-----------------------
+English: %51.02
+Turkish: %48.98
+ugli English
+-----------------------
+English: %0.01
+Turkish: %99.99
+güvenliklerle Turkish
+-----------------------
+English: %99.97
+Turkish: %0.03
+microswitch English
+-----------------------
+English: %100.00
+Turkish: %0.00
+compellability English
+-----------------------
+English: %9.38
+Turkish: %90.62
+arzuhalci Turkish
+-----------------------
+English: %99.77
+Turkish: %0.23
+psychiatrist English
+-----------------------
+English: %0.01
+Turkish: %99.99
+coşkumuzla Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+bayılmamız Turkish
+-----------------------
+English: %98.25
+Turkish: %1.75
+tidier English
+-----------------------
+English: %98.58
+Turkish: %1.42
+hyperalgesic English
+-----------------------
+English: %0.00
+Turkish: %100.00
+kurabiyelerimiz Turkish
+-----------------------
+English: %36.06
+Turkish: %63.94
+simgeci Turkish
+-----------------------
+English: %0.00
+Turkish: %100.00
+çalışmalısınızdır Turkish
+-----------------------
+English: %99.76
+Turkish: %0.24
+reduccion English
 -----------------------
 ```
