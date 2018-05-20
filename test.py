@@ -8,7 +8,7 @@ hiddenLayerSize = 256
 learningRate = 0.01
 
 # All valid characters.
-alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöçıüş"
+alphabet = string.ascii_lowercase + "ğöçıüş"
 alphabetSize = len(alphabet)
 
 languages = ["English", "Turkish"]
@@ -17,7 +17,7 @@ languageCount = len(languages)
 # Word filter. Deletes unwanted char from given string.
 def wordFilter(x):
 	# String only can contain lowercase, uppercase letters, Turkish alphabet letters and spaces.
-	x = re.sub(r"""[^A-Za-zĞÖÇİÜŞğöçıüş]""", "", x)
+	x = re.sub(r"""[^a-zğöçıüş]""", "", x)
 	x = x.strip()
 	return x
 

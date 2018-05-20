@@ -5,7 +5,7 @@ import string, re
 Takes the raw vocabulary files and creates own. (Deletes unwanted characters...)
 '''
 
-alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöçıüş"
+alphabet = string.ascii_lowercase + "ğöçıüş"
 alphabetSize = len(alphabet)
 
 # Applies filter to given list. (Deletes empty elements from list.)
@@ -15,7 +15,7 @@ def applyFilter(x):
 # Word filter. Deletes unwanted char from given string.
 def wordFilter(x):
 	# String only can contain lowercase, uppercase letters, Turkish alphabet letters and spaces.
-	x = re.sub(r"""[^A-Za-zĞÖÇİÜŞğöçıüş]""", "", x)
+	x = re.sub(r"""[^a-zğöçıüş]""", "", x)
 	x = x.strip()
 	return x
 
