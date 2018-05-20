@@ -15,7 +15,7 @@ def applyFilter(x):
 # Word filter. Deletes unwanted char from given string.
 def wordFilter(x):
 	# String only can contain lowercase, uppercase letters, Turkish alphabet letters and spaces.
-	x = re.sub(r"""[^A-Za-zĞÖÇİÜŞğöoçıüş]""", "", x)
+	x = re.sub(r"""[^A-Za-zĞÖÇİÜŞğöçıüş]""", "", x)
 	x = x.strip()
 	return x
 
