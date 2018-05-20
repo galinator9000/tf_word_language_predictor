@@ -4,7 +4,7 @@ import numpy as np
 import string, re
 
 # All valid characters.
-alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöoçıüş"
+alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöçıüş"
 alphabetSize = len(alphabet)
 
 languages = ["English", "Turkish"]
@@ -15,7 +15,7 @@ X = np.load("X.npy")
 y = np.load("y.npy")
 
 # General variables.
-epochs = 10
+epochs = 10000
 hiddenLayerSize = 256
 learningRate = 0.01
 splitRatio = 0.99
@@ -96,7 +96,7 @@ sess.run(tf.global_variables_initializer())
 # Load previously trained model if exists.
 saver = tf.train.Saver()
 try:
-	saver.load(sess, 'model/weights')
+	saver.restore(sess, 'model/weights')
 	print("Weights loaded.")
 except:
 	print("Weights not found.")

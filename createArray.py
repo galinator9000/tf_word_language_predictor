@@ -10,7 +10,7 @@ import numpy as np
 import string
 
 # All valid characters.
-alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöoçıüş"
+alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöçıüş"
 alphabetSize = len(alphabet)
 
 # Applies filter to given list. (Deletes empty elements from list.)

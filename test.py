@@ -9,7 +9,7 @@ hiddenLayerSize = 256
 learningRate = 0.01
 
 # All valid characters.
-alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöoçıüş"
+alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöçıüş"
 alphabetSize = len(alphabet)
 
 languages = ["English", "Turkish"]

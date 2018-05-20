@@ -1,3 +1,4 @@
+aba
 abaküslerle
 abanıcılarının
 abanmayalım
@@ -11,6 +12,7 @@ abartmamız
 abartmış
 abarttığınız
 abazanın
+abdest
 abdestlik
 abessin
 abidelerle
@@ -992,6 +994,7 @@ anormalde
 anormalliğinden
 ansını
 ansiklopedilerimiz
+ant
 antenleri
 antibiyotikler
 antifriz
@@ -1243,6 +1246,7 @@ arzularınızı
 arzulayacaksınız
 arzuluyorsak
 arzusu
+asa
 asabileşirdi
 asabisi
 asabiyse
@@ -1919,6 +1923,7 @@ bağnazlaştırılmış
 bağrıldığında
 bağrınızdan
 bağrışmak
+bahada
 bahanelerde
 bahanesini
 baharatını
@@ -2054,6 +2059,8 @@ baltamla
 balyan
 balyozu
 bamız
+banak
+banana
 bandajlara
 bandırada
 bandırmak
@@ -2441,7 +2448,9 @@ becermelerinin
 becermiyor
 bedavalara
 bedbinliğe
+bede
 bedelleridir
+beden
 bedeninden
 bedenlerinden
 bedensizleştiği
@@ -2851,6 +2860,7 @@ biçiyordu
 biçmekten
 biçmeyi
 biçtiğinizden
+bide
 bidonunda
 bienalleriyle
 bigudileri
@@ -3178,6 +3188,7 @@ boheminin
 boks
 boksörlerle
 boktur
+bolden
 bollaşan
 bollaştırmaktır
 bolsuyla
@@ -5741,6 +5752,7 @@ dindirebilecekleri
 dindirememenin
 dindirilemeyeceğinin
 dindirmede
+dine
 dingil
 dingilsiz
 dinginliğimizin
@@ -7371,6 +7383,7 @@ espriniz
 esrarengizliğini
 esrarlıydık
 esrimeydi
+ester
 estetikçilerimizin
 estetiksizliğe
 estirdikleri
@@ -7911,6 +7924,7 @@ filozofa
 filozoftan
 filtrelemeyle
 filtreleyebiliyorlar
+final
 finaliste
 finalle
 finansallar
@@ -8799,6 +8813,7 @@ goldeyse
 gollerindeki
 golümü
 goncayı
+gonk
 gotiğinin
 göbeğimizi
 göbeklendi
@@ -9184,6 +9199,7 @@ gruplaşan
 gruplaştıklarını
 gruptakilerle
 guaşlarının
+gulden
 gulyabanilerdir
 gurbetçili
 gurbetlere
@@ -9590,6 +9606,7 @@ hapşırıklar
 hapşırmakla
 har
 harabeyle
+harakiri
 haramilerin
 haramzadelerine
 hararetlendirecek
@@ -10145,6 +10162,7 @@ homojenleştirmeyi
 homoseksüellikle
 homurdanırsın
 homurdanmayın
+hop
 hoparlörüyle
 hoplamayacak
 hoplatılıp
@@ -10202,6 +10220,7 @@ hukuksallaşmış
 hukuksuzlukların
 hukukunun
 humarın
+hun
 huniye
 hurafelerden
 hurdacıda
@@ -11520,6 +11539,7 @@ kafeslenmiş
 kafeşantanlar
 kafeyi
 kafilemizdeki
+kafirin
 kafiyelere
 kaftanındaki
 kağandan
@@ -11830,6 +11850,7 @@ kanma
 kanmasaydılar
 kanmazsa
 kanolarını
+kansan
 kanserlerden
 kanserlilerden
 kansındalar
@@ -11968,6 +11989,7 @@ kaptırmadıklarını
 kaptırmamanızı
 kaptırmayacağım
 kaptırmışız
+kaput
 kapüşonumu
 karabasandır
 karabatağın
@@ -13329,6 +13351,7 @@ kokmuyorsa
 kokoreçten
 kokpitten
 kokteyllerdeki
+koku
 kokuluğum
 kokusuymuş
 kokuşmuşluğudur
@@ -14502,6 +14525,7 @@ lanetlenilmesine
 lanetlenmişse
 lanetleyeceklerini
 lanetliye
+lansa
 lapalar
 largonun
 lastiğin
@@ -14559,6 +14583,7 @@ liderlere
 liderleriyken
 liderliğinizle
 lidersizliğin
+lift
 ligdeysek
 ligle
 likenlerden
@@ -14819,6 +14844,7 @@ marazızdır
 mareşali
 marifet
 marifetlerimizi
+marina
 marinasından
 marjlar
 markajcılarıydı
@@ -15212,11 +15238,13 @@ mihraptan
 mikrobilgisayara
 mikrodalgaya
 mikrofonsa
+mikron
 mikropları
 mikroskoptaki
 miktardaymış
 miktarlarımız
 milat
+milice
 milimetrelerde
 milisini
 militandır
@@ -15314,10 +15342,12 @@ modası
 modeldir
 modelinse
 modellemelere
+modeller
 modellerken
 modellikte
 modemlerimizle
 modernistini
+modernize
 modernleşebilen
 modernleşiyordum
 modernleşmesin
@@ -17294,6 +17324,7 @@ pedallarıyla
 pederlerimizin
 pedodontisi
 pehlivanlığı
+pekin
 pekişmenin
 pekiştirdikten
 pekiştirelim
@@ -17390,6 +17421,7 @@ pikniklere
 pikteki
 pilavında
 pilicin
+piline
 pilotajı
 pilotlu
 pilotun
@@ -17403,6 +17435,7 @@ pirelenmiş
 pirimi
 pirinçlerimize
 pirlerimize
+pis
 piskoposlardan
 pislemesinden
 pisleşiyor
@@ -17450,6 +17483,7 @@ plaka
 plakanızın
 plakçıya
 plakla
+plan
 plandalar
 planetlerle
 planınına
@@ -18006,6 +18040,7 @@ sabahladığını
 sabahlamışlığımız
 sabahlarız
 sabahlık
+saban
 sabanızda
 sabıkalılardan
 sabıkasıydı
@@ -18013,6 +18048,7 @@ sabırlıdan
 sabırsızlanacaksınız
 sabırsızlanıyordu
 sabırsızlığı
+sabin
 sabitlemedik
 sabitlendikten
 sabitlenmediği
@@ -18423,6 +18459,7 @@ saptırdım
 saptırılması
 saptırmadı
 saptırmasından
+sara
 saracağının
 saradan
 saramayacağını
@@ -18461,6 +18498,7 @@ sarışınlarına
 sarıvermiş
 sarileri
 sarkacakmış
+sarkar
 sarkın
 sarkıtılan
 sarkıtlar
@@ -20945,6 +20983,7 @@ tapmıyorlardı
 taptıklarına
 tapulanan
 tapulattırdı
+tara
 taradıysa
 tarafgirlikte
 tarafındakiler
@@ -22136,6 +22175,7 @@ tüylülerin
 tüyonuzu
 tüyüşü
 tüzüğümüze
+uca
 ucubesinin
 ucundaydı
 ucuzdular
@@ -23780,6 +23820,7 @@ yardımlarsa
 yardımlaşmadığı
 yardımlaştığımız
 yardımseverliğin
+yare
 yarensiz
 yargıçları
 yargıçlıktır
@@ -24851,6 +24892,7 @@ yunanı
 yunanlılarıyla
 yunuslar
 yurdumdan
+yurt
 yurtlu
 yurtseverler
 yurtsuzdan
@@ -25160,6 +25202,7 @@ zenginleştirmesine
 zenginliğimizi
 zenginliklerin
 zenime
+zer
 zerkinde
 zerrelerin
 zerrinlerle
@@ -25274,26 +25317,6 @@ zorlayabileceklerinden
 zorlayacağız
 zorlayamayacak
 zorlayıcılığına
-zorluklaraydı
-zorlularının
-zormuş
-zorundayımdır
-zorunluktu
-zorunluluklarımız
-zoruylaydı
-zulalanabiliyor
-zulasına
-zulmedilirken
-zulmetmemektedir
-zulmettikten
-zulümmüş
-zurnamızla
-züğürtlemiş
-zülfünü
-zümresindeki
-züppelerinden
-zürafalardan
-yıcılığına
 zorluklaraydı
 zorlularının
 zormuş

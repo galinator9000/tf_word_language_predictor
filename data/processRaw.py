@@ -5,7 +5,7 @@ import string, re
 Takes the raw vocabulary files and creates own. (Deletes unwanted characters...)
 '''
 
-alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöoçıüş"
+alphabet = string.ascii_uppercase + string.ascii_lowercase + "ĞÖÇİÜŞğöçıüş"
 alphabetSize = len(alphabet)
 
 # Applies filter to given list. (Deletes empty elements from list.)
