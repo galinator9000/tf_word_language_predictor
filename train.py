@@ -40,7 +40,7 @@ del X, y
 
 # Word filter. Deletes unwanted char from given string.
 def wordFilter(x):
-	# String only can contain lowercase, uppercase letters, Turkish alphabet letters and spaces.
+	# String only can contain lowercase letters and Turkish alphabet letters.
 	x = re.sub(r"""[^a-zğöçıüş]""", "", x)
 	x = x.strip()
 	return x
