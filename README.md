@@ -8,7 +8,7 @@ Basic character-level word language predictor (English, Turkish) with Many-to-On
 # Prepare Data
 
 `
-processRaw.py
+data/processRaw.py
 `
 
 Processes raw vocabulary files. Creates a new file, writes each word line by line to created files.
@@ -28,6 +28,12 @@ train.py
 `
 
 Loads X.npy and y.npy and trains the model.
+
+`
+test.py
+`
+
+Loads trained model and lets the user test the model.
 
 # Some examples below.
 After 100.000 epochs training, trained with ~50000 words. (~25000 for each language)
