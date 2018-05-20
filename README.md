@@ -1,5 +1,5 @@
 # tf_word_language_predictor
-Basic character-level word language predictor (English-Turkish) with Many-to-One LSTM written in TensorFlow.
+Basic character-level word language predictor (English, Turkish) with Many-to-One LSTM written in TensorFlow.
 
 <h2>Data sources
 <h4>Turkish: https://code.google.com/archive/p/zemberek/downloads (1140208 Turkish words)
