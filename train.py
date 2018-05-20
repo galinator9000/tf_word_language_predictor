@@ -15,10 +15,28 @@ X = np.load("X.npy")
 y = np.load("y.npy")
 
 # General variables.
-exampleCount = X.shape[0]
 epochs = 10000
 hiddenLayerSize = 256
 learningRate = 0.01
+splitRatio = 0.99
+
+trainPoint = int(X.shape[0] * splitRatio)
+
+Xtrain = X[:trainPoint]
+ytrain = y[:trainPoint]
+
+Xtest = X[trainPoint:]
+ytest = y[trainPoint:]
+
+exampleCountTrain = Xtrain.shape[0]
+exampleCountTest = Xtest.shape[0]
+
+print("Xtrain:", Xtrain.shape)
+print("ytrain:", ytrain.shape)
+print("Xtest:", Xtest.shape)
+print("ytest:", ytest.shape)
+
+del X, y
 
 # Word filter. Deletes unwanted char from given string.
 def wordFilter(x):
@@ -78,8 +96,8 @@ sess.run(tf.global_variables_initializer())
 # Train!
 dataIndex = 0
 for e in range(0, epochs):
-	batch_x = X[dataIndex]
-	batch_y = y[dataIndex]
+	batch_x = Xtrain[dataIndex]
+	batch_y = ytrain[dataIndex]
 
 	# batch_x has shape (Timestep) right now.
 	# We should reshape it to (Batch, Timestep) for matching placeholder's shape.
@@ -90,7 +108,7 @@ for e in range(0, epochs):
 	dataIndex += 1
 
 	# We went through all the dataset? Reset it.
-	if dataIndex >= exampleCount:
+	if dataIndex >= exampleCountTrain:
 		dataIndex = 0
 
 	feed = {
@@ -108,7 +126,7 @@ for e in range(0, epochs):
 		batch_x_onehot, batch_y_onehot, pred = sess.run([xx, yy, prediction], feed_dict=feed)
 
 		for i, lang in enumerate(languages):
-			print(lang + ": %" + str(format(pred[i]*100, "3.3")))
+			print(lang + ": %" + ("%.2f" % (pred[i]*100)))
 
 		seqText = decodeSeq(batch_x_onehot)
 		langText = languages[np.argmax(pred)]
@@ -116,7 +134,32 @@ for e in range(0, epochs):
 		print(seqText, langText)
 		print("-----------------------")
 
-# Training done! Let's test our model by hand.
+# Training done! Let's test our model with test dataset.
+for dataIndex in range(0, exampleCountTest):
+	batch_x = Xtest[dataIndex]
+	batch_y = ytest[dataIndex]
+
+	# batch_x has shape (Timestep) right now.
+	# We should reshape it to (Batch, Timestep) for matching placeholder's shape.
+	batch_x = batch_x.reshape((1,) + batch_x.shape)
+	batch_y = batch_y.reshape((1,) + batch_y.shape)
+
+	feed = {
+		xx_n:batch_x,
+		yy_n:batch_y
+	}
+
+	batch_x_onehot, batch_y_onehot, pred = sess.run([xx, yy, prediction], feed_dict=feed)
+
+	for i, lang in enumerate(languages):
+		print(lang + ": %" + ("%.2f" % (pred[i]*100)))
+	seqText = decodeSeq(batch_x_onehot)
+	langText = languages[np.argmax(pred)]
+	
+	print(seqText, langText)
+	print("-----------------------")
+
+# Let's test our model by hand as well.
 while True:
 	inW = wordFilter(input(">> "))
 
@@ -134,7 +177,7 @@ while True:
 
 	pred = sess.run(prediction, feed_dict=feed)
 	for i, lang in enumerate(languages):
-		print(lang + ": %" + str(format(pred[i]*100, "3.3")))
+		print(lang + ": %" + ("%.2f" % (pred[i]*100)))
 
 	langText = languages[np.argmax(pred)]
 
