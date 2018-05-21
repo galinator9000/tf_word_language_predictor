@@ -3,11 +3,11 @@ import tensorflow as tf
 import numpy as np
 import string, re
 
-# All valid characters.
-alphabet = string.ascii_lowercase + "ğöçıüş"
+# Read alphabet (used all letters in datasets) from file.
+alphabet = open("data/alphabet.txt", "r", encoding="utf-8").read()
 alphabetSize = len(alphabet)
 
-languages = ["English", "Turkish"]
+languages = ["English", "Turkish", "French"]
 languageCount = len(languages)
 
 # Load data.
@@ -37,13 +37,6 @@ print("Xtest:", Xtest.shape)
 print("ytest:", ytest.shape)
 
 del X, y
-
-# Word filter. Deletes unwanted char from given string.
-def wordFilter(x):
-	# String only can contain lowercase letters and Turkish alphabet letters.
-	x = re.sub(r"""[^a-zğöçıüş]""", "", x)
-	x = x.strip()
-	return x
 
 # Decodes sequence for given matrix. Parameter should have (Batch, Timestep, Features) shape.
 def decodeSeq(x):

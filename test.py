@@ -7,17 +7,16 @@ import string, re
 hiddenLayerSize = 256
 learningRate = 0.01
 
-# All valid characters.
-alphabet = string.ascii_lowercase + "ğöçıüş"
+# Read alphabet (used all letters in datasets) from file.
+alphabet = open("data/alphabet.txt", "r", encoding="utf-8").read()
 alphabetSize = len(alphabet)
 
-languages = ["English", "Turkish"]
+languages = ["English", "Turkish", "French"]
 languageCount = len(languages)
 
 # Word filter. Deletes unwanted char from given string.
 def wordFilter(x):
-	# String only can contain lowercase letters and Turkish alphabet letters.
-	x = re.sub(r"""[^a-zğöçıüş]""", "", x)
+	x = re.sub(r"""[^a-zğöçıüşàâãèéêëîïñôöùû]""", "", x)
 	x = x.strip()
 	return x
 
@@ -44,8 +43,6 @@ lastOutput = logits[0][-1]
 # This loss function takes input, applies Softmax to it.
 # And calculates loss from given target values.
 loss = tf.losses.softmax_cross_entropy(logits=lastOutput, onehot_labels=yy)
-optimizer = tf.train.AdamOptimizer(learningRate)
-train = optimizer.minimize(loss)
 
 # This tensor going to be used in testing.
 # Softmax is already calculating by loss function during training.
