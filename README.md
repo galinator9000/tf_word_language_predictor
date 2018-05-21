@@ -2,8 +2,9 @@
 Basic character-level word language predictor (English, Turkish) with Many-to-One LSTM written in TensorFlow.
 
 <h2>Data sources
-<h4>Turkish: https://code.google.com/archive/p/zemberek/downloads (1140208 Turkish words)
-<h4>English: https://github.com/dwyl/english-words (370099 English words)
+<h4>Turkish: https://code.google.com/archive/p/zemberek/downloads (1.140.208 Turkish words)
+<h4>English: https://github.com/dwyl/english-words (370.099 English words)
+<h4>French: https://www.kaggle.com/stephrouen/word-in-french/data (142.694 French words)
 
 # Prepare Data
 
@@ -36,182 +37,100 @@ test.py
 Loads trained model and lets the user test the model.
 
 # Some test examples below.
-After 10.000 epochs training, trained with ~50000 words. (~25000 for each language)
+After 20.000 epochs training, trained with ~75000 words. (~25000 for each language)
 ```
-English: %98.04
-Turkish: %1.96
-hypophysectomize English
+English: %10.43
+Turkish: %0.33
+French: %89.24
+palilalie French
 -----------------------
-English: %99.99
+English: %99.45
+Turkish: %0.13
+French: %0.42
+misfiled English
+-----------------------
+English: %0.00
+Turkish: %100.00
+French: %0.00
+devşirmekte Turkish
+-----------------------
+English: %23.75
+Turkish: %0.04
+French: %76.21
+commitments French
+-----------------------
+English: %0.00
+Turkish: %100.00
+French: %0.00
+dörttede Turkish
+-----------------------
+English: %98.86
 Turkish: %0.01
-playwrightess English
+French: %1.13
+injuriousness English
 -----------------------
-English: %99.62
-Turkish: %0.38
-footings English
+English: %16.29
+Turkish: %0.28
+French: %83.43
+insignes French
 -----------------------
-English: %30.09
-Turkish: %69.91
-seminule Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-ağırlaşmasında Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-unutmadığımın Turkish
------------------------
-English: %15.65
-Turkish: %84.35
-cezbeden Turkish
+English: %14.26
+Turkish: %0.34
+French: %85.40
+tiare French
 -----------------------
 English: %0.00
-Turkish: %100.00
-düşeceklerle Turkish
------------------------
-English: %100.00
 Turkish: %0.00
-unpropriety English
------------------------
-English: %95.69
-Turkish: %4.31
-lararia English
------------------------
-English: %99.17
-Turkish: %0.83
-lithotrite English
+French: %100.00
+soulagèrent French
 -----------------------
 English: %0.00
 Turkish: %100.00
-savunmanızı Turkish
+French: %0.00
+amalıyız Turkish
 -----------------------
 English: %0.00
 Turkish: %100.00
-statüsündeydiler Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-kontratımla Turkish
------------------------
-English: %72.68
-Turkish: %27.32
-comtesse English
------------------------
-English: %99.17
-Turkish: %0.83
-greenhorns English
------------------------
-English: %0.01
-Turkish: %99.99
-solmazdı Turkish
------------------------
-English: %99.84
-Turkish: %0.16
-regaling English
------------------------
-English: %0.00
-Turkish: %100.00
-incinmişsin Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-sağlamlandırmak Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-ulaşılmışlık Turkish
------------------------
-English: %0.08
-Turkish: %99.92
-serenliyi Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-durumdaymışım Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-kaybedesiniz Turkish
------------------------
-English: %86.71
-Turkish: %13.29
-protephemeroidea English
------------------------
-English: %99.95
-Turkish: %0.05
-botchy English
------------------------
-English: %98.94
-Turkish: %1.06
-undersaturate English
------------------------
-English: %99.53
-Turkish: %0.47
-fierabras English
------------------------
-English: %99.99
-Turkish: %0.01
-onay English
------------------------
-English: %0.00
-Turkish: %100.00
-üçkağıtçıda Turkish
------------------------
-English: %51.02
-Turkish: %48.98
-ugli English
------------------------
-English: %0.01
-Turkish: %99.99
-güvenliklerle Turkish
------------------------
-English: %99.97
-Turkish: %0.03
-microswitch English
------------------------
-English: %100.00
-Turkish: %0.00
-compellability English
------------------------
-English: %9.38
-Turkish: %90.62
-arzuhalci Turkish
+French: %0.00
+toprakları Turkish
 -----------------------
 English: %99.77
-Turkish: %0.23
-psychiatrist English
+Turkish: %0.00
+French: %0.23
+dyeweeds English
+-----------------------
+English: %38.40
+Turkish: %0.38
+French: %61.21
+spiderier French
+-----------------------
+English: %58.38
+Turkish: %2.61
+French: %39.00
+epilachna English
+-----------------------
+English: %1.10
+Turkish: %0.01
+French: %98.89
+pleuvrait French
+-----------------------
+English: %4.27
+Turkish: %95.54
+French: %0.19
+yolmadan Turkish
+-----------------------
+English: %0.00
+Turkish: %0.00
+French: %100.00
+cène French
+-----------------------
+English: %49.69
+Turkish: %2.02
+French: %48.28
+skyscraper English
 -----------------------
 English: %0.01
-Turkish: %99.99
-coşkumuzla Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-bayılmamız Turkish
------------------------
-English: %98.25
-Turkish: %1.75
-tidier English
------------------------
-English: %98.58
-Turkish: %1.42
-hyperalgesic English
------------------------
-English: %0.00
-Turkish: %100.00
-kurabiyelerimiz Turkish
------------------------
-English: %36.06
-Turkish: %63.94
-simgeci Turkish
------------------------
-English: %0.00
-Turkish: %100.00
-çalışmalısınızdır Turkish
------------------------
-English: %99.76
-Turkish: %0.24
-reduccion English
------------------------
+Turkish: %0.00
+French: %99.99
+giboyeux French
 ```
