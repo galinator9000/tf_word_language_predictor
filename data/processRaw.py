@@ -22,13 +22,17 @@ def wordFilter(x):
 # English raw vocabulary uses \r\n as newline.
 # Turkish raw vocabulary uses \n as newline.
 en = open("englishRaw.txt", "r", encoding="utf-8").read().replace("\r\n", "\n")
-tr = open("turkishRaw.txt", "r", encoding="utf-8").read()
+tr = open("turkishRaw.txt", "r", encoding="utf-8").read().replace("\r\n", "\n")
 
 # Vocabularies gonna be size of approximately this value.
 approxVocabSize = 25000
 
 enList = applyFilter(en.split("\n"))
 trList = applyFilter(tr.split("\n"))
+
+# Removes duplicated words if exists.
+enList = list(set(enList))
+trList = list(set(trList))
 
 enCount = len(enList)
 trCount = len(trList)
