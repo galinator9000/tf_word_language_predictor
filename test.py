@@ -20,12 +20,6 @@ def wordFilter(x):
 	x = x.strip()
 	return x
 
-# xx_n has shape (Batch, Timestep)
-# yy_n has shape (Batch)
-
-# xx_n has integers for each timestep, which going to be converted to one-hot vector with xx tensor.
-# yy_n has just an 1 integer for last timestep. (Many-to-One)
-# Also this is going to be converted to one-hot vector with yy tensor.
 xx_n = tf.placeholder(tf.int32, shape=(None, None))
 yy_n = tf.placeholder(tf.int32, shape=(None))
 
